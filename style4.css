@@ -1,0 +1,59 @@
+
+body {
+    position: relative; 
+  }
+
+#section1 {padding-top:3vh;padding-bottom:3vh;height:260vh;width:100vw;color: rgb(255, 255, 255); background-color: lime}
+#section2 {padding-top:3vh;height:260vh;width:100vw;color: rgb(0, 0, 0); background-color: #fbff02}
+
+ul {
+  list-style-type: square;
+  color: white;
+}
+
+h1 {
+  padding-top : 8vh
+}
+
+.table {
+  color : white
+}
+
+.ul {
+  padding-top : 3vh
+}
+
+h3 {
+  padding-top: 3.5vh
+}
+
+.page-link {
+  color : rgb(0, 0, 0);
+  background-color : #fbff02;
+  border-color: rgb(0, 0, 0);
+}
+
+.page-link:hover {
+  color:#fbff02;
+  border-color: #fbff02;
+  background-color: black
+}
+
+button {
+  background-color :lime;
+  border-color: rgb(0, 255, 21);
+  color : white
+}
+button:hover {
+  background-color: lime;
+}
+
+.form-control {
+  border-color: rgb(0, 0, 0);
+  border-width: 0.3vh;
+}
+
+.mark {
+  color: black;
+  font-size: 20px;
+}
