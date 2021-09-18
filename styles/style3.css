@@ -1,51 +1,60 @@
 body {
-    position: relative; 
-  }
-
-#section1 {padding-top:3vh;padding-bottom:3vh;width:100vw;color: rgb(255, 255, 255); background-color:forestgreen}
-#section2 {padding-top:3vh;width:100vw;height:max-content;color: rgb(255, 255, 255); background-color:firebrick}
+  position: relative; 
+}
 
 ul {
   list-style-type: square;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 h1 {
   padding-top : 8vh
 }
 
-.table {
+button {
+  background-color : blue;
+  border-color: rgb(38, 0, 255);
   color : white
+}
+
+button:hover {
+  background-color: dodgerblue;
+}
+
+h3 {
+  padding-top: 3.5vh
+}
+
+
+.con {
+  border-radius: 25px;
+  color: #000000;
+  background-color: #86cfff;
+}
+
+.navbar {
+  background-color: #003877;
 }
 
 .ul {
   padding-top : 3vh
 }
 
-h3 {
-  padding-top: 3.5vh;
-  padding-bottom:3.5vh
-}
-
 .page-link {
   color : rgb(0, 0, 0);
-  background-color : firebrick;
+  background-color : rgb(181, 188, 255);
   border-color: rgb(0, 0, 0);
 }
 
 .page-link:hover {
-  color:firebrick;
-  border-color: firebrick;
-  background-color: black
+  color:rgb(255, 255, 255);
+  border-color: rgb(0, 0, 0);
+  background-color: rgb(8, 26, 189)
 }
 
-button {
-  background-color : blue;
-  border-color: rgb(38, 0, 255);
-  color : white;
-}
-button:hover {
-  background-color: dodgerblue;
+.this {
+  background-color: rgb(8, 26, 189);
+  color:rgb(255, 255, 255)
 }
 
 .form-control {
@@ -57,8 +66,34 @@ button:hover {
   color: black;
   font-size: 20px;
 }
+
 .form-control {
-  width : 20vw;
+  width : 40vw;
   display: inline-block
 }
 
+
+#pie {
+  text-align: center;
+}
+
+#section1 {
+  padding-top:3vh;
+  padding-bottom:3vh;
+  height:max-content;
+  width:100vw;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+}
+
+#section2 {
+  padding-top:1.5vh;
+  height:max-content;
+  width:100vw;
+  color: rgb(0, 0, 0); 
+  background-color: rgb(252, 252, 252);
+}
+
+#titolo {
+  padding-top: 2vh
+}
