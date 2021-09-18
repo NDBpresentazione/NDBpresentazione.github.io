@@ -7,7 +7,22 @@ sol5=["let","his","family","down"]
 sol6=["had","not","turned","up"]
 sol7=["see","mary","off"]
 const solutions = [sol1,sol2,sol3,sol4,sol5,sol6,sol7]
-
+const marks = [
+    ["F","red"],
+    ["E","orange"],
+    ["D","yellow"],
+    ["C","green"],
+    ["B","blue"],
+    ["A","purple"]
+]
+const getMark = (mark) => {
+    if (mark.toFixed(0) <= 5 ){
+        return [marks[0][0],marks[0][1]]
+    }
+    else {
+        return [marks[mark.toFixed(0)-5][0],marks[mark.toFixed(0)-5][1]]
+    }
+}
 const correct = () => {
     let mark = 0
     let mark2 = mark
@@ -68,7 +83,7 @@ const correct = () => {
             })
         for(let j = 0;j<solutions[i].length;j++){
             l = j
-            if (solutions[i].length!=answers3length && solutions[i].length!=answers3.length-1 ){
+            if (solutions[i].length!=answers3.length && solutions[i].length!=answers3.length-1 ){
                 break
             }
             if (solutions[i][j] != answers3[l] ){
@@ -96,8 +111,8 @@ const correct = () => {
             document.getElementById("sol"+String(k+1)).innerHTML ="<img src='https://image.freepik.com/premium-photo/green-tick-mark-white-background_172429-560.jpg' height=20vh width=20vh>"
         }
     }
-
-    document.getElementById("mark").innerHTML = "VOTO : "+ mark.toFixed(2)
+    evaluation = getMark(mark)
+    document.getElementById("mark").innerHTML = "VOTO : <font color = "+evaluation[1]+"> "+evaluation[0]+"</font>"
 
 }
 
