@@ -11,7 +11,22 @@ sol8=["meryl","does","not","know","whether","to","accept","her","boss's","invita
 sol9=["i","have","told","you","many","times","not","to","read","my","emails"]
 sol10=["do","you","want","me","to","turn","on","the","light"]
 const solutions = [sol1,sol2,sol11,sol3,sol4,sol5,sol6,sol7,sol8,sol9,sol10]
-
+const marks = [
+    ["F","red"],
+    ["E","orange"],
+    ["D","yellow"],
+    ["C","green"],
+    ["B","blue"],
+    ["A","purple"]
+]
+const getMark = (mark) => {
+    if (mark.toFixed(0) <= 5 ){
+        return [marks[0][0],marks[0][1]]
+    }
+    else {
+        return [marks[mark.toFixed(0)-5][0],marks[mark.toFixed(0)-5][1]]
+    }
+}
 const correct = () => {
     let mark = 0
     let mark2 = mark
@@ -106,7 +121,8 @@ const correct = () => {
             document.getElementById("sol"+String(k+1)).innerHTML ="<img src='https://image.freepik.com/premium-photo/green-tick-mark-white-background_172429-560.jpg' height=20vh width=20vh>"
         }
     }
-    document.getElementById("mark").innerHTML = "VOTO : "+ mark.toFixed(2)
+    evaluation = getMark(mark)
+    document.getElementById("mark").innerHTML = "VOTO : <font color = "+evaluation[1]+"> "+evaluation[0]+"</font>"
 
 }
 
