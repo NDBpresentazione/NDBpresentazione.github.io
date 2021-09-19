@@ -155,7 +155,7 @@
     <div class="container con p-3 my-3 border">
       <h1 id="titolo">Let's do some practice !!!</h1>
       <h3>Choose the correct answer:</h3>
-      <form name = "quiz5" id="quiz">
+      <form name = "quiz5" id="quiz" action = "javascript:check()" onsubmit="check()">
         <div>
             <p>If it rains, the boys ..... hockey.</p>
             <p><input type="radio" name = "question1" value="rispostaA">A. won't play</p>
@@ -197,7 +197,8 @@
         <br>
 
 
-        <input type="button"  color="black" name="" value="ENTER" id="button" onclick="check()">
+        <button type="submit"  color="black" >ENTER</button>
+        
       </form>
       <p id="result"></p>
     </div>
