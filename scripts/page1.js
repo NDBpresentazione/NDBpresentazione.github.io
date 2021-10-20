@@ -1,8 +1,8 @@
 form1 = document.getElementById("b1")
 sol1=["i", "have", "waited", "an", "hour", "to", "get", "the", "tickets"]
-sol2=["why", "do" , "not" ,"you", "come", "to", "visit", "us","on", "Sunday" ]
+sol2=["why", "do" , "not" ,"you", "come", "to", "visit", "us","on", "sunday" ]
 sol3=["i","do","not","want","us","to","be","late"]
-sol4=["did","Ron","go", "upstairs", "to", "study", "or", "to","play"]
+sol4=["did","ron","go", "upstairs", "to", "study", "or", "to","play"]
 sol5=["hurry","up","to","finish","your","homework"]
 sol6=["come","and","sit","in","the","garden"]
 sol7=["let's","go","play","soccer","this","afternoon"]
