@@ -1,7 +1,6 @@
 form1 = document.getElementById("b1")
 sol1=["i", "have", "waited", "an", "hour", "to", "get", "the", "tickets"]
 sol2=["why", "do" , "not" ,"you", "come", "to", "visit", "us","on", "Sunday" ]
-sol11=["let's", "take", "a" ,"taxi"]
 sol3=["i","do","not","want","us","to","be","late"]
 sol4=["did","Ron","go", "upstairs", "to", "study", "or", "to","play"]
 sol5=["hurry","up","to","finish","your","homework"]
@@ -10,7 +9,7 @@ sol7=["let's","go","play","soccer","this","afternoon"]
 sol8=["meryl","does","not","know","whether","to","accept","her","boss's","invitation","or","not"]
 sol9=["i","have","told","you","many","times","not","to","read","my","emails"]
 sol10=["do","you","want","me","to","turn","on","the","light"]
-const solutions = [sol1,sol2,sol11,sol3,sol4,sol5,sol6,sol7,sol8,sol9,sol10]
+const solutions = [sol1,sol2,sol3,sol4,sol5,sol6,sol7,sol8,sol9,sol10]
 const marks = [
     ["F","red"],
     ["E","orange"],
@@ -33,7 +32,6 @@ const correct = () => {
     let mistakes = new Array(0)
     let s1 = document.exercise.s1.value
     let s2 = document.exercise.s2.value
-    let s11 = document.exercise.s11.value
     let s3 = document.exercise.s3.value
     let s4 = document.exercise.s4.value
     let s5 = document.exercise.s5.value
@@ -42,7 +40,7 @@ const correct = () => {
     let s8 = document.exercise.s8.value
     let s9 = document.exercise.s9.value
     let s10 = document.exercise.s10.value
-    let answers1 = [s1,s2,s11,s3,s4,s5,s6,s7,s8,s9,s10]
+    let answers1 = [s1,s2,s3,s4,s5,s6,s7,s8,s9,s10]
     let answers2 = answers1.map ( e => e.trim())
     let answers4 = answers2.map ( e => e.toLowerCase())
     let anwers3 
@@ -104,7 +102,7 @@ const correct = () => {
         }
         console.log(answers3[0])
         if (check == solutions[i].length){
-            mark+= (10/11)
+            mark+= (10/10)
         }
         if ( mark2 != mark){
             mistakes.push("Right answer")
@@ -148,12 +146,7 @@ function ss3 () {
     for (let x = 0;x < sol3.length;x++){
         sol += sol3[x] + " "
     }
-    let sol1 = ""
-    sol11[0][0] = sol11[0][0].toUpperCase()
-    for (let x = 0;x<sol11.length;x++){
-        sol1 += sol11[x]+ " "
-    }
-    document.getElementById("sol3").innerHTML= sol1.toUpperCase() + " . " + sol.toUpperCase()
+    document.getElementById("sol3").innerHTML= sol.toUpperCase()
 }
 
 function ss4 () {
